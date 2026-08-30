@@ -106,26 +106,6 @@ const function arenaBounds(arena: Frame): Vector2
 	return Vector2.new(size.X / size.Y, 1)
 end
 
-const function rayToWall(origin: Vector2, direction: Vector2, bounds: Vector2): number
-	local best = math.huge
-
-	if math.abs(direction.X) > 1e-6 then
-		const target = if direction.X > 0 then bounds.X else 0
-		best = math.min(best, (target - origin.X) / direction.X)
-	end
-
-	if math.abs(direction.Y) > 1e-6 then
-		const target = if direction.Y > 0 then bounds.Y else 0
-		best = math.min(best, (target - origin.Y) / direction.Y)
-	end
-
-	if best == math.huge then
-		return 0
-	end
-
-	return math.max(best, 0)
-end
-
 const function updateMiniPosition(mini: ImageLabel, arena: Frame)
 	const height = arena.AbsoluteSize.Y
 
@@ -181,7 +161,7 @@ const function ramAttack()
 				if toPlayer.Magnitude > 0 then
 					aim = toPlayer.Unit
 
-					const reach = rayToWall(Rook.MiniPosition, aim, arenaBounds(arena)) * height
+					const reach = EnemyUtilities.RayToBounds(Rook.MiniPosition, aim, arenaBounds(arena)) * height
 
 					const chargeAlpha = math.clamp(elapsed / TRACE_DURATION, 0, 1)
 					const revealAlpha = chargeAlpha * chargeAlpha
@@ -224,7 +204,7 @@ const function ramAttack()
 
 				if height > 0 and Rook.Laser then
 					const origin = EnemyUtilities.GetCenter(mini)
-					const reach = rayToWall(Rook.MiniPosition, aim, arenaBounds(arena)) * height
+					const reach = EnemyUtilities.RayToBounds(Rook.MiniPosition, aim, arenaBounds(arena)) * height
 
 					EnemyUtilities.UpdateLaser(Rook.Laser, origin, aim, reach, MINI_SIZE * height)
 
@@ -325,7 +305,7 @@ const function arrowAttack()
 	end
 
 	const direction = toTarget.Unit
-	const travel = rayToWall(spawn, direction, bounds)
+	const travel = EnemyUtilities.RayToBounds(spawn, direction, bounds)
 	const stickPosition = Vector2.new(
 		math.clamp(spawn.X + direction.X * travel, ARROW_HALF, bounds.X - ARROW_HALF),
 		math.clamp(spawn.Y + direction.Y * travel, ARROW_HALF, bounds.Y - ARROW_HALF)

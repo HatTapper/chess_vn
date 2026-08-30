@@ -1,8 +1,8 @@
 {
   "version": "1.0",
   "project": {
-    "totalFocusTime": 67715495,
-    "totalActiveTime": 9414639
+    "totalFocusTime": 67956763,
+    "totalActiveTime": 9416768
   },
   "files": {
     "ReplicatedStorage/AudioHandler.luau": {
@@ -51,11 +51,11 @@
     },
     "ReplicatedStorage/EnemyUtilities.luau": {
       "pending": 348749,
-      "focus": 2764010
+      "focus": 2778930
     },
     "ReplicatedStorage/Enemies/Rook.luau": {
-      "pending": 198734,
-      "focus": 25025573
+      "pending": 199246,
+      "focus": 25073037
     },
     "ReplicatedStorage/Enemies/Queen.luau": {
       "pending": 827079,
@@ -64,6 +64,10 @@
     "StarterPlayerScripts/ExtraStuff.local.luau": {
       "pending": 25593,
       "focus": 47340
+    },
+    ".git/COMMIT_EDITMSG": {
+      "pending": 1617,
+      "focus": 4220
     }
   },
   "deleted": {
