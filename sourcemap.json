@@ -1,0 +1,148 @@
+{
+  "name": "game",
+  "className": "DataModel",
+  "children": [
+    {
+      "name": "StarterPlayer",
+      "className": "StarterPlayer",
+      "pluginManaged": true,
+      "children": [
+        {
+          "name": "StarterPlayerScripts",
+          "className": "StarterPlayerScripts",
+          "pluginManaged": true,
+          "children": [
+            {
+              "name": "DialogueController",
+              "className": "LocalScript",
+              "pluginManaged": true,
+              "filePaths": [
+                "c:/Users/aidan/OneDrive/Documents/ROBLOX/chess_vn/StarterPlayerScripts/DialogueController/init.local.luau"
+              ],
+              "children": [
+                {
+                  "name": "DialogueStorage",
+                  "className": "ModuleScript",
+                  "pluginManaged": true,
+                  "filePaths": [
+                    "c:/Users/aidan/OneDrive/Documents/ROBLOX/chess_vn/StarterPlayerScripts/DialogueController/DialogueStorage.luau"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "AudioInit",
+              "className": "LocalScript",
+              "pluginManaged": true,
+              "filePaths": [
+                "c:/Users/aidan/OneDrive/Documents/ROBLOX/chess_vn/StarterPlayerScripts/AudioInit/init.local.luau"
+              ]
+            },
+            {
+              "name": "GameLoop",
+              "className": "LocalScript",
+              "pluginManaged": true,
+              "filePaths": [
+                "c:/Users/aidan/OneDrive/Documents/ROBLOX/chess_vn/StarterPlayerScripts/GameLoop.local.luau"
+              ]
+            },
+            {
+              "name": "ExtraStuff",
+              "className": "LocalScript",
+              "pluginManaged": true,
+              "filePaths": [
+                "c:/Users/aidan/OneDrive/Documents/ROBLOX/chess_vn/StarterPlayerScripts/ExtraStuff.local.luau"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ReplicatedStorage",
+      "className": "ReplicatedStorage",
+      "pluginManaged": true,
+      "children": [
+        {
+          "name": "AudioHandler",
+          "className": "ModuleScript",
+          "pluginManaged": true,
+          "filePaths": [
+            "c:/Users/aidan/OneDrive/Documents/ROBLOX/chess_vn/ReplicatedStorage/AudioHandler.luau"
+          ]
+        },
+        {
+          "name": "CameraControls",
+          "className": "ModuleScript",
+          "pluginManaged": true,
+          "filePaths": [
+            "c:/Users/aidan/OneDrive/Documents/ROBLOX/chess_vn/ReplicatedStorage/CameraControls.luau"
+          ]
+        },
+        {
+          "name": "Chapters",
+          "className": "ModuleScript",
+          "pluginManaged": true,
+          "filePaths": [
+            "c:/Users/aidan/OneDrive/Documents/ROBLOX/chess_vn/ReplicatedStorage/Chapters.luau"
+          ]
+        },
+        {
+          "name": "ScreenEffects",
+          "className": "ModuleScript",
+          "pluginManaged": true,
+          "filePaths": [
+            "c:/Users/aidan/OneDrive/Documents/ROBLOX/chess_vn/ReplicatedStorage/ScreenEffects.luau"
+          ]
+        },
+        {
+          "name": "BattleMenu",
+          "className": "ModuleScript",
+          "pluginManaged": true,
+          "filePaths": [
+            "c:/Users/aidan/OneDrive/Documents/ROBLOX/chess_vn/ReplicatedStorage/BattleMenu.luau"
+          ]
+        },
+        {
+          "name": "EnemyUtilities",
+          "className": "ModuleScript",
+          "pluginManaged": true,
+          "filePaths": [
+            "c:/Users/aidan/OneDrive/Documents/ROBLOX/chess_vn/ReplicatedStorage/EnemyUtilities.luau"
+          ]
+        },
+        {
+          "name": "Enemies",
+          "className": "Folder",
+          "pluginManaged": true,
+          "children": [
+            {
+              "name": "Knight",
+              "className": "ModuleScript",
+              "pluginManaged": true,
+              "filePaths": [
+                "c:/Users/aidan/OneDrive/Documents/ROBLOX/chess_vn/ReplicatedStorage/Enemies/Knight.luau"
+              ]
+            },
+            {
+              "name": "Rook",
+              "className": "ModuleScript",
+              "pluginManaged": true,
+              "filePaths": [
+                "c:/Users/aidan/OneDrive/Documents/ROBLOX/chess_vn/ReplicatedStorage/Enemies/Rook.luau"
+              ]
+            },
+            {
+              "name": "Queen",
+              "className": "ModuleScript",
+              "pluginManaged": true,
+              "filePaths": [
+                "c:/Users/aidan/OneDrive/Documents/ROBLOX/chess_vn/ReplicatedStorage/Enemies/Queen.luau"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

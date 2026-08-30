@@ -1,0 +1,73 @@
+{
+  "version": "1.0",
+  "project": {
+    "totalFocusTime": 67715495,
+    "totalActiveTime": 9414639
+  },
+  "files": {
+    "ReplicatedStorage/AudioHandler.luau": {
+      "pending": 1101223,
+      "focus": 2878144
+    },
+    "StarterPlayerScripts/AudioInit/init.local.luau": {
+      "pending": 20271,
+      "focus": 64490
+    },
+    "StarterPlayerScripts/DialogueController/init.local.luau": {
+      "pending": 1100820,
+      "focus": 3297841
+    },
+    ".vscode/settings.json": {
+      "pending": 245,
+      "focus": 2146
+    },
+    "StarterPlayerScripts/DialogueController/DialogueStorage.luau": {
+      "pending": 1371155,
+      "focus": 4274695
+    },
+    "ReplicatedStorage/CameraControls.luau": {
+      "pending": 143888,
+      "focus": 306609
+    },
+    "StarterPlayerScripts/GameLoop.local.luau": {
+      "pending": 951001,
+      "focus": 3614195
+    },
+    "ReplicatedStorage/Chapters.luau": {
+      "pending": 83140,
+      "focus": 157442
+    },
+    "ReplicatedStorage/ScreenEffects.luau": {
+      "pending": 170663,
+      "focus": 337900
+    },
+    "ReplicatedStorage/BattleMenu.luau": {
+      "pending": 1090117,
+      "focus": 4301086
+    },
+    "ReplicatedStorage/Enemies/Knight.luau": {
+      "pending": 1981961,
+      "focus": 5706497
+    },
+    "ReplicatedStorage/EnemyUtilities.luau": {
+      "pending": 348749,
+      "focus": 2764010
+    },
+    "ReplicatedStorage/Enemies/Rook.luau": {
+      "pending": 198734,
+      "focus": 25025573
+    },
+    "ReplicatedStorage/Enemies/Queen.luau": {
+      "pending": 827079,
+      "focus": 3050142
+    },
+    "StarterPlayerScripts/ExtraStuff.local.luau": {
+      "pending": 25593,
+      "focus": 47340
+    }
+  },
+  "deleted": {
+    "active": 0,
+    "focus": 10952
+  }
+}
